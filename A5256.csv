@@ -1,0 +1,67 @@
+Reference,Value,Qty,Manufacturer_Part_Number,Mouser Price/Stock,Footprint
+C1,22u,1,EMK325B7226KMHP,https://www.mouser.it/ProductDetail/TAIYO-YUDEN/EMK325B7226KMHP?qs=sBf%2Fb4nBSlcilLRd25%252BpPw%3D%3D,Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder
+C2,22u,1,TMK325B7226KM8P,https://www.mouser.it/ProductDetail/TAIYO-YUDEN/TMK325B7226KM8P?qs=DPoM0jnrROXI7ALsxmPqKA%3D%3D,Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder
+"C14, C15",22u,2,C2012X5R1C226K125AC,https://www.mouser.it/ProductDetail/TDK/C2012X5R1C226K125AC?qs=NRhsANhppD9w%2FLQbaDeqVw%3D%3D,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+L2,22u,1,MLF1608C220KTA00,https://www.mouser.it/ProductDetail/TDK/MLF1608C220KTA00?qs=%2FPzWLGNeQ%252BjGpvlAgvyY1g%3D%3D,Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+"C3,C11",1uF,2,UMK107ABJ105KA8T,https://www.mouser.it/ProductDetail/TAIYO-YUDEN/UMK107ABJ105KA8T?qs=DPoM0jnrROWC9xm3Xn18%252BQ%3D%3D,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+C5,1uf,1,C1206J105K5RACAUTO,https://www.mouser.it/ProductDetail/KEMET/C1206J105K5RACAUTO?qs=sSYV1F9c5cHDgjLSAks89g%3D%3D,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder
+"C10,C13",1u,2,C0603X105J4RACTU,https://www.mouser.it/ProductDetail/KEMET/C0603X105J4RACTU?qs=55YtniHzbhByFY8JAOO%252B%2Fg%3D%3D,
+"C6,C16",47u,2,C0805C476K9PACTU,https://www.mouser.it/ProductDetail/KEMET/C0805C476K9PACTU?qs=UoPT7wUmgYJdMpKKzKLARw%3D%3D,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
+C7,56p,1,06035U560FAT2A,https://www.mouser.it/ProductDetail/KYOCERA-AVX/06035U560FAT2A?qs=mcBJtHuWqlVWasbR85mjgg%3D%3D,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+"C8,C17,C18,C19,C20,C21,C22,C24,C25,C26,C27,C28,C29,C30,C31,C32,C33,C34,C35,C36,C37,C38,C39,C40,C41,C42,C43,C44,C45,C46,C47,C48,C49,C50,C51,C52,C53,C54,C55,C56,C57,C58,C59,C60,C61,C62,C63,C64,C65,C66,C67,C68,C69,C70,C71,C72,C73,C74,C75,C76,C77,C78,C79",100n,63,0603YC104J4T2A,https://www.mouser.it/ProductDetail/KYOCERA-AVX/0603YC104J4T2A?qs=Cej1j9ztgjFj4oy6%2FGHyMg%3D%3D,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+C9,2.2n,1,C0603C222F5GACAUTO,https://www.mouser.it/ProductDetail/KEMET/C0603C222F5GACAUTO?qs=Dbnw6jgPYP4bw0sYi%252BUzPQ%3D%3D,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+C23,470n,1,C0603X474J4RACTU,https://www.mouser.it/ProductDetail/KEMET/C0603X474J4RACTU?qs=ds50AKTGxA%252B8QRlewITVcA%3D%3D,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+C80,10u,1,C1608X5R0J106K080AE,https://www.mouser.it/ProductDetail/TDK/C1608X5R0J106K080AE?qs=j%252B1pi9TdxUYpgNDGmWvMXg%3D%3D,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+J5,Conn_01x02,1,1725656,https://www.mouser.it/ProductDetail/Phoenix-Contact/1725656?qs=Ul7CXFMnlWWQeccayYbRmw%3D%3D,SamacSys_Parts:1725656
+L1,3.3u,1,MSD7342-332MLC,https://www.mouser.it/ProductDetail/Coilcraft/MSD7342-332MLC?qs=zCSbvcPd3pZ0w5r6q900rw%3D%3D,SamacSys_Parts:MSD7342332MLC
+"R1,R2",4.7K,2,CRT0603-FX-4701ELF,https://www.mouser.it/ProductDetail/Bourns/CRT0603-FX-4701ELF?qs=9fn1gpisni4EA4DK%2Fy7YEg%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+R3,25.5K,1,RT0603FRE0725K5L,https://www.mouser.it/ProductDetail/YAGEO/RT0603FRE0725K5L?qs=4CyHz7GXqSg4i0%2Fj%252BuT05w%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+R4,60.4K,1,RT0603FRE0760K4L,https://www.mouser.it/ProductDetail/YAGEO/RT0603FRE0760K4L?qs=4CyHz7GXqSiTzGyBxIOoxA%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+R5,100K,1,MCT06030C1003FP500,https://www.mouser.it/ProductDetail/Vishay-Beyschlag/MCT06030C1003FP500?qs=OkbXAuJ%2FeQLKw6BAE1M8zQ%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+R6,45.3K,1,RT0603FRE0745K3L,https://www.mouser.it/ProductDetail/YAGEO/RT0603FRE0745K3L?qs=4CyHz7GXqSjZdK2aq1DdCA%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+R7,124K,1,RT0603FRE07124KL,https://www.mouser.it/ProductDetail/YAGEO/RT0603FRE07124KL?qs=%2Ff7pOCXLR5cpZ4rJp2HTMQ%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+R8,6.19K,1,RT0603FRE076K19L,https://www.mouser.it/ProductDetail/YAGEO/RT0603FRE076K19L?qs=%2Ff7pOCXLR5co6XBgd3zZHQ%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+R9,40.2K,1,RT0603FRE0740K2L,https://www.mouser.it/ProductDetail/YAGEO/RT0603FRE0740K2L?qs=%2Ff7pOCXLR5fBTbUb8kWbeg%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+R10,8.66K,1,RT0603FRE078K66L,https://www.mouser.it/ProductDetail/YAGEO/RT0603FRE078K66L?qs=4CyHz7GXqSg9caGa9bITEw%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+R11,3.3K,1,RT0603FRE073K3L,https://www.mouser.it/ProductDetail/YAGEO/RT0603FRE073K3L?qs=8cPjvKtxWv4e7c7t%252BTLsig%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+R12,118K,1,RT0603FRE07118KL,https://www.mouser.it/ProductDetail/YAGEO/RT0603FRE07118KL?qs=4CyHz7GXqSgnBPDSvf2zJA%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+R13,46.4K,1,RT0603FRE0746K4L,https://www.mouser.it/ProductDetail/YAGEO/RT0603FRE0746K4L?qs=4CyHz7GXqSh9Qj4kSBOsOQ%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+R14,210K,1,RT0603FRE07210KL,https://www.mouser.it/ProductDetail/YAGEO/RT0603FRE07210KL?qs=RO0CIbR1WRe0XpFZv6SBEw%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+"R15,R16,R19,R20,R22,R24,R31,R32,R33,R35,R39,R40,R41,R42,R43,R44,R48,R51,R55,R56,R57,R58,R59,R60,R64,R67,R71,R72,R73,R74,R75,R76,R80,R83,R87,R88,R89,R90,R91,R92,R96,R99,R103,R104,R105,R106,R107,R108,R112,R115,R119,R120,R121,R122,R123,R124,R128,R131,R135,R136,R137,R138,R139,R140,R144",50,65,ERJ-3RED49R9V,https://www.mouser.it/ProductDetail/Panasonic/ERJ-3RED49R9V?qs=sGAEpiMZZMtG0KNrPCHnjRHqCPPqDvAehdOYrIEV3rTBj1nwFltYag%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+R17,3K,1,5.60112E+11,https://www.mouser.it/ProductDetail/Wurth-Elektronik/560112116128?qs=mELouGlnn3d9zmvF5OWSLQ%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+R18,1K,1,5.60112E+11,https://www.mouser.it/ProductDetail/Wurth-Elektronik/560112116014?qs=mELouGlnn3c6F7vJtj%2Fnig%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+"R21,R23,R29,R30,R34,R38,R45,R49,R50,R54,R61,R65,R66,R70,R77,R81,R82,R86,R93,R97,R98,R102,R109,R113,R114,R118,R125,R129,R130,R134,R141,R145",4.4K,32,CRCW06034K42FKTA,https://www.mouser.it/ProductDetail/Vishay-Dale/CRCW06034K42FKTA?qs=n7zwPG%2FnC6%2FNcnb%2FIdo5Fg%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+"R25,R26,R27,R28,R36,R37,R46,R47,R52,R53,R62,R63,R68,R69,R78,R79,R84,R85,R94,R95,R100,R101,R110,R111,R116,R117,R126,R127,R132,R133,R142,R143",10K,32,RC0603FR-1010KL,https://www.mouser.it/ProductDetail/YAGEO/RC0603FR-1010KL?qs=EiqXWrxQq62Qjatj%252Bv7pew%3D%3D,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder
+TP1,TestPoint IN 0A,1,,,TestPoint:TestPoint_Pad_D1.0mm
+TP2,TestPoint IN 0B,1,,,TestPoint:TestPoint_Pad_D1.0mm
+TP3,TestPoint IN 1,1,,,TestPoint:TestPoint_Pad_D1.0mm
+TP4,TestPoint IN 2,1,,,TestPoint:TestPoint_Pad_D1.0mm
+TP5,TestPoint IN 3,1,,,TestPoint:TestPoint_Pad_D1.0mm
+TP6,TestPoint IN 4,1,,,TestPoint:TestPoint_Pad_D1.0mm
+TP7,TestPoint IN 5,1,,,TestPoint:TestPoint_Pad_D1.0mm
+TP8,TestPoint IN 6,1,,,TestPoint:TestPoint_Pad_D1.0mm
+TP9,TestPoint IN 7,1,,,TestPoint:TestPoint_Pad_D1.0mm
+TP10,TestPoint IN 8,1,,,TestPoint:TestPoint_Pad_D1.0mm
+TP11,TestPoint IN 9,1,,,TestPoint:TestPoint_Pad_D1.0mm
+TP12,TestPoint IN 10,1,,,TestPoint:TestPoint_Pad_D1.0mm
+TP13,TestPoint IN 11,1,,,TestPoint:TestPoint_Pad_D1.0mm
+TP14,TestPoint IN 12,1,,,TestPoint:TestPoint_Pad_D1.0mm
+TP15,TestPoint IN 13,1,,,TestPoint:TestPoint_Pad_D1.0mm
+TP16,TestPoint IN 14,1,,,TestPoint:TestPoint_Pad_D1.0mm
+U1,LTC2627IDE-1_PBF,1,LTC2627IDE-1#PBF,https://www.mouser.it/ProductDetail/Analog-Devices/LTC2627IDE-1PBF?qs=hVkxg5c3xu8gKtoBGxGqZw%3D%3D,LTC2627:DFN-12_DE
+"U2,U3,U6,U8,U10,U12,U14,U16,U18",AD8657,9,AD8657ARMZ,https://www.mouser.it/ProductDetail/Analog-Devices/AD8657ARMZ?qs=%2FtpEQrCGXCyWDLbruGmbEQ%3D%3D,SamacSys_Parts:SOP65P490X110-8N
+"U4,U5,U7,U9,U11,U13,U15,U17",LMH7322,8,LMH7322SQ/NOPB,https://www.mouser.it/ProductDetail/Texas-Instruments/LMH7322SQ-NOPB?qs=7lkVKPoqpbaUjMjzPcpgVg%3D%3D,SamacSys_Parts:QFN50P400X400X80-25N
+IC6,AD5673RBCPZ-1,1,AD5673RBCPZ-1,https://www.mouser.co.uk/ProductDetail/Analog-Devices/AD5673RBCPZ-1?qs=vmHwEFxEFR%2FZyEbhv6iXWg%3D%3D,SamacSys_Parts:QFN40P400X400X100-29N-D
+IC5,LT1963AES8-3.3#TRPBF,1,LT1963AES8-3.3#TRPBF,https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT1963AES8-3.3TRPBF?qs=ytflclh7QUUySaDyqzWtPg%3D%3D,SamacSys_Parts:SOIC127P599X175-8N
+IC4,LT3015IMSE-15#PBF,1,LT3015IMSE-15#PBF,https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT3015IMSE-15PBF?qs=ytflclh7QUVSwFTOBXsk4g%3D%3D,SamacSys_Parts:SOP65P490X110-13N
+"IC1,IC3",LTM8074EY#PBF,2,LTM8074EY#PBF,https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTM8074EYPBF?qs=qSfuJ%252Bfl%2Fd7DTb%2FxVZP80w%3D%3D,SamacSys_Parts:BGA25C65P5X5_400X400X198
+J2,9185346323,1,9185346323,https://www.mouser.it/ProductDetail/HARTING/09185346323?qs=GZB%2FOSW0r0GMbz7Zhp6Wbw%3D%3D,SamacSys_Parts:09185346323
+J4,9195346829,1,9195346829,https://www.mouser.it/ProductDetail/HARTING/09195346829?qs=Li%252BoUPsLEnuwyDKLUcDNFw%3D%3D,Connector:2x17 Connector
+J3,EPL.00.250.NTN,1,EPA.00.250.DTN,https://www.mouser.it/ProductDetail/LEMO/EPA.00.250.DTN?qs=g4eXmMl0Iez%252BqHq864iIgQ%3D%3D,LEMO-EPA.00.250.DTN:LEMO-EPA.00.250.DTN
+"J1,J6",5-1775444-3,2,5-1775444-3,https://www.mouser.it/ProductDetail/TE-Connectivity/5-1775444-3?qs=fvVej%2FMj3jd1mbV4xT0APA%3D%3D,SamacSys_Parts:517754443
+D1,SSB44-M3_5BT,1,SSB44-M3/5BT,https://www.mouser.co.uk/ProductDetail/Vishay-General-Semiconductor/SSB44-M3-5BT?qs=asPD7ZL2j3UPHHvFzBv%2F2A%3D%3D,SamacSys_Parts:DIOM5436X244N
+IC2,LT3581IDE#PBF,1,LT3581IDE#PBF,https://www.mouser.com/Search/Refine.aspx?Keyword=584-LT3581IDE%23PBF,SamacSys_Parts:SON50P300X400X80-15N-D
+,,,,,
+,,,,,
+,,,,,
+,,,,,
