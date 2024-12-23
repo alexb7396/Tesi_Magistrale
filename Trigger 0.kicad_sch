@@ -12187,7 +12187,7 @@
 				)
 			)
 		)
-		(property "Value" "TestPoint IN 0B"
+		(property "Value" "TestPoint IN 0A"
 			(at 372.364 173.99 90)
 			(effects
 				(font
@@ -12993,7 +12993,7 @@
 				)
 			)
 		)
-		(property "Value" "TestPoint IN 0A"
+		(property "Value" "TestPoint IN 0B"
 			(at 372.364 147.32 90)
 			(effects
 				(font
