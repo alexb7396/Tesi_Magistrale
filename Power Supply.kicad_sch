@@ -5,145 +5,6 @@
 	(uuid "a65c6c58-e64d-4e22-a8da-e4f36e0787f9")
 	(paper "A3")
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x02"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x02_1_1"
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -907,6 +768,193 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SamacSys_Parts:1473770000"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 16.51 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "1473770000"
+				(at 16.51 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "1473770000"
+				(at 16.51 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://catalog.weidmueller.com/catalog/Start.do?ObjectID=1473770000&_ga=2.183197283.473756102.1670815619-1938212839.1670815619&_gl=1*vrn7me*_ga*MTkzODIxMjgzOS4xNjcwODE1NjE5*_ga_276D8EYXDF*MTY3MTEwMTc2Ny4xNC4xLjE2NzExMDM3MzIuMC4wLjA."
+				(at 16.51 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Printed circuit board terminals, 5.00 mm, Number of poles: 2, 90, black, PUSH IN with actuator, Clamping range, max. [rated connection]: 1.5 mm, Tape"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "9.65"
+				(at 16.51 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "470-1473770000"
+				(at 16.51 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Weidmuller/1473770000?qs=juCpvWVDeytzPGOCMSmPdA%3D%3D"
+				(at 16.51 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Weidmuller"
+				(at 16.51 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "1473770000"
+				(at 16.51 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "1473770000_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -2.54 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3517,6 +3565,12 @@
 		(uuid "35278757-5814-4d7c-ace2-5ed6e4129509")
 	)
 	(junction
+		(at 115.57 213.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "35ce0209-6da8-4e68-b4f9-b0a1c26e8683")
+	)
+	(junction
 		(at 270.51 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3593,12 +3647,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4faccdc6-3e12-472a-8691-5eecf8307e55")
-	)
-	(junction
-		(at 86.36 213.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "508445ce-28d2-4021-89f5-896206f61fef")
 	)
 	(junction
 		(at 292.1 227.33)
@@ -3931,6 +3979,12 @@
 		(uuid "fb1d5d12-7778-417a-be99-e0a28eceaa06")
 	)
 	(junction
+		(at 115.57 215.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbf70b7a-e74e-4cde-bbd5-1aea0248bde4")
+	)
+	(junction
 		(at 140.97 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3981,6 +4035,16 @@
 			(type default)
 		)
 		(uuid "021fce7a-3e22-4b31-a1da-2bb441a2f027")
+	)
+	(wire
+		(pts
+			(xy 111.76 213.36) (xy 115.57 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02edae88-900d-4deb-b7b6-d72b8a01e0aa")
 	)
 	(wire
 		(pts
@@ -4544,7 +4608,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 210.82) (xy 86.36 213.36)
+			(xy 115.57 210.82) (xy 115.57 213.36)
 		)
 		(stroke
 			(width 0)
@@ -4964,6 +5028,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 213.36) (xy 86.36 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dbec16b-5967-4c7f-bf85-75ca0d3fc707")
+	)
+	(wire
+		(pts
 			(xy 127 48.26) (xy 127 44.45)
 		)
 		(stroke
@@ -5124,6 +5198,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 215.9) (xy 115.57 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fb387a1-1c6b-49fe-8f17-4b7828ff7112")
+	)
+	(wire
+		(pts
 			(xy 45.72 128.27) (xy 45.72 133.35)
 		)
 		(stroke
@@ -5174,7 +5258,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 215.9) (xy 86.36 215.9)
+			(xy 80.01 215.9) (xy 86.36 215.9)
 		)
 		(stroke
 			(width 0)
@@ -5384,16 +5468,6 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 213.36) (xy 86.36 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99efefe0-2ff9-42c5-93c6-cfc1d5d72385")
-	)
-	(wire
-		(pts
 			(xy 308.61 129.54) (xy 325.12 129.54)
 		)
 		(stroke
@@ -5511,16 +5585,6 @@
 			(type default)
 		)
 		(uuid "a4c0f72f-6cab-4f2b-ae1d-93bb3ac9686d")
-	)
-	(wire
-		(pts
-			(xy 86.36 213.36) (xy 91.44 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5b4cb4e-1f7d-4b63-8071-a363af4c0f36")
 	)
 	(wire
 		(pts
@@ -5731,6 +5795,16 @@
 			(type default)
 		)
 		(uuid "bd3ca57c-a7e1-4194-b111-b296d2ddf776")
+	)
+	(wire
+		(pts
+			(xy 86.36 213.36) (xy 86.36 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd82a65c-f6ea-4518-a5df-da8ed4c41d44")
 	)
 	(wire
 		(pts
@@ -6061,6 +6135,16 @@
 			(type default)
 		)
 		(uuid "dcf455a2-46c4-4a32-87ef-4e851fc6be0e")
+	)
+	(wire
+		(pts
+			(xy 115.57 215.9) (xy 119.38 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd1de764-54c7-4057-a0b3-743f7a4e9769")
 	)
 	(wire
 		(pts
@@ -6451,6 +6535,16 @@
 			(type default)
 		)
 		(uuid "fd19685c-c1f9-4027-bfb8-31534dcf52ab")
+	)
+	(wire
+		(pts
+			(xy 115.57 213.36) (xy 115.57 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe816604-0cab-43d4-9793-e4d3cd35348c")
 	)
 	(text "12V"
 		(exclude_from_sim no)
@@ -7040,76 +7134,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 96.52 213.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "21982fe6-2fa3-49fd-90ce-aeee827eba6a")
-		(property "Reference" "J5"
-			(at 99.06 213.3599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 99.06 215.8999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SamacSys_Parts:1725656"
-			(at 96.52 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 96.52 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 96.52 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e9650827-01e4-44a6-91fa-4bb1eb8ae4eb")
-		)
-		(pin "1"
-			(uuid "6987440b-9e6d-4b74-aeb2-9a66fbf14e8b")
-		)
-		(instances
-			(project ""
-				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/c4428dd2-c041-417d-a9b2-0a34b803d32b"
-					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 292.1 229.87 0)
 		(unit 1)
@@ -7378,7 +7402,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 77.47 215.9 90)
+		(at 80.01 215.9 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7387,7 +7411,7 @@
 		(fields_autoplaced yes)
 		(uuid "33a42a2a-fa0c-4c2f-8caf-2c6eca7b3470")
 		(property "Reference" "#FLG02"
-			(at 75.565 215.9 0)
+			(at 78.105 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7396,7 +7420,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 73.66 215.8999 90)
+			(at 76.2 215.8999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7405,7 +7429,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 215.9 0)
+			(at 80.01 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7414,7 +7438,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.47 215.9 0)
+			(at 80.01 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7423,7 +7447,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 77.47 215.9 0)
+			(at 80.01 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8354,6 +8378,131 @@
 			(project "A5256"
 				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/c4428dd2-c041-417d-a9b2-0a34b803d32b"
 					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:1473770000")
+		(at 91.44 213.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "657b03e8-e6fe-4e59-b14d-2b27821e5de1")
+		(property "Reference" "J5"
+			(at 101.854 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1473770000"
+			(at 102.616 224.282 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:1473770000"
+			(at 107.95 308.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://catalog.weidmueller.com/catalog/Start.do?ObjectID=1473770000&_ga=2.183197283.473756102.1670815619-1938212839.1670815619&_gl=1*vrn7me*_ga*MTkzODIxMjgzOS4xNjcwODE1NjE5*_ga_276D8EYXDF*MTY3MTEwMTc2Ny4xNC4xLjE2NzExMDM3MzIuMC4wLjA."
+			(at 107.95 408.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Printed circuit board terminals, 5.00 mm, Number of poles: 2, 90, black, PUSH IN with actuator, Clamping range, max. [rated connection]: 1.5 mm, Tape"
+			(at 91.44 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "9.65"
+			(at 107.95 608.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "470-1473770000"
+			(at 107.95 708.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Weidmuller/1473770000?qs=juCpvWVDeytzPGOCMSmPdA%3D%3D"
+			(at 107.95 808.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Weidmuller"
+			(at 107.95 908.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1473770000"
+			(at 107.95 1008.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b946fdcf-169d-4b9f-877f-72bea05c9255")
+		)
+		(pin "3"
+			(uuid "a2dd2b19-ab7a-4399-8009-2025bc906e7c")
+		)
+		(pin "1"
+			(uuid "a783d5f3-2ae6-4398-bef6-98a445f5053d")
+		)
+		(pin "4"
+			(uuid "b9b626ab-51cf-475c-b80f-ee6c159d4500")
+		)
+		(instances
+			(project ""
+				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/c4428dd2-c041-417d-a9b2-0a34b803d32b"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -9720,73 +9869,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 77.47 213.36 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c03d9925-4ab2-4a26-90c9-dbfee675e732")
-		(property "Reference" "#FLG01"
-			(at 75.565 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 73.66 213.3599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.47 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 77.47 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 77.47 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "43c04787-7f6c-401d-8bb3-02f82fb837ab")
-		)
-		(instances
-			(project "A5256"
-				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/c4428dd2-c041-417d-a9b2-0a34b803d32b"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 129.54 128.27 90)
 		(unit 1)
@@ -9855,7 +9937,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 86.36 210.82 0)
+		(at 115.57 210.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9863,7 +9945,7 @@
 		(dnp no)
 		(uuid "c5c8beef-8296-4c36-ab26-c7ae04f3639c")
 		(property "Reference" "#PWR09"
-			(at 86.36 214.63 0)
+			(at 115.57 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9872,7 +9954,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 89.408 208.534 0)
+			(at 115.316 206.756 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9880,7 +9962,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 210.82 0)
+			(at 115.57 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9889,7 +9971,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 210.82 0)
+			(at 115.57 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9898,7 +9980,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 86.36 210.82 0)
+			(at 115.57 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10797,6 +10879,73 @@
 			(project "A5256"
 				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/c4428dd2-c041-417d-a9b2-0a34b803d32b"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 119.38 215.9 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5214c71-08ba-4575-93fc-924ae3cae56e")
+		(property "Reference" "#FLG01"
+			(at 121.285 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 123.19 215.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 119.38 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e0da83e-af1e-4c70-9cd3-b5b30947f3e9")
+		)
+		(instances
+			(project "A5256"
+				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/c4428dd2-c041-417d-a9b2-0a34b803d32b"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
