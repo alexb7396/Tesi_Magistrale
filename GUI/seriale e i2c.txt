@@ -1,0 +1,46 @@
+import serial
+import time
+
+# Crea un oggetto seriale per la comunicazione con Arduino
+ser = serial.Serial('COM3', 9600)  # Usa la porta seriale corretta per il tuo sistema
+
+# I 64 byte che vuoi inviare
+data = bytes([i for i in range(64)])  # Esempio di 64 byte, da 0 a 63
+
+# Dividi i dati in slot da 4 byte
+for i in range(0, len(data), 4):
+    packet = data[i:i+4]
+    ser.write(packet)  # Invia il pacchetto di 4 byte
+    time.sleep(0.1)  # Una breve pausa per dare il tempo a Arduino di ricevere i dati
+
+ser.close()  # Chiude la connessione seriale
+
+
+
+
+#include <Wire.h>
+
+#define I2C_ADDRESS 0x0C  // Indirizzo del dispositivo I2C (cambia se necessario)
+
+void setup() {
+  Serial.begin(9600);  // Inizializza la seriale
+  Wire.begin();        // Inizializza la comunicazione I2C
+}
+
+void loop() {
+  if (Serial.available() >= 4) {  // Se ci sono almeno 4 byte da leggere dalla seriale
+    byte address = Serial.read();   // Leggi il primo byte come indirizzo I2C
+    byte data1 = Serial.read();     // Primo byte di dati
+    byte data2 = Serial.read();     // Secondo byte di dati
+    byte data3 = Serial.read();     // Terzo byte di dati
+
+    // Esegui la comunicazione I2C
+    Wire.beginTransmission(address);  // Inizia la comunicazione con l'indirizzo I2C
+    Wire.write(data1);               // Invia il primo byte di dati
+    Wire.write(data2);               // Invia il secondo byte di dati
+    Wire.write(data3);               // Invia il terzo byte di dati
+    Wire.endTransmission();          // Termina la trasmissione
+
+    delay(100);  // Piccola pausa per evitare che Arduino venga sopraffatto da troppi dati
+  }
+}

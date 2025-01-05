@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "8.0.7"
     },
-    "CreationDate": "2024-12-28T14:56:54+01:00"
+    "CreationDate": "2025-01-03T10:46:18+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -70,16 +70,6 @@
     {
       "Path": "A5256-B_Cu.gbr",
       "FileFunction": "Copper,L6,Bot",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "A5256-F_Adhesive.gbr",
-      "FileFunction": "Glue,Top",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "A5256-B_Adhesive.gbr",
-      "FileFunction": "Glue,Bot",
       "FilePolarity": "Positive"
     },
     {

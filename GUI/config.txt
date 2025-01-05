@@ -1,0 +1,7 @@
+I2C Address Configuration:
+A1: Gnd
+A0: Gnd
+C1: Gnd
+C0: Gnd
+
+Threshold Values:
