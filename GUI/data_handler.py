@@ -3,6 +3,7 @@ from tkinter import ttk
 import struct
 import binascii
 
+# Lookup table for C1 and C0 configuration of LTC2627
 lookup_table_C1C0 = [
     ['Gnd',     'Gnd',      '00010000'],
     ['Gnd',     'Float',    '00010001'],
@@ -15,6 +16,7 @@ lookup_table_C1C0 = [
     ['Vcc',     'Vcc',      '00110000'],
 ]
 
+# Lookup table for A1 and A0 configuration of AD5673
 lookup_table_A1A0 = [
     ['Gnd', 'Gnd', '00001100'],
     ['Gnd', 'Vcc', '00001101'],
@@ -22,6 +24,7 @@ lookup_table_A1A0 = [
     ['Vcc', 'Vcc', '00001111'],
 ]
 
+# DAC addresses for channel selection
 dac_addresses = [
     "0000", "0001", "0010", "0011",
     "0100", "0101", "0110", "0111",
@@ -29,86 +32,99 @@ dac_addresses = [
     "1100", "1101"
 ]
 
-command = 48 # 0011 shifted by 4 in integer
+# Command value to be used (0011 shifted left by 4)
+command = 48  # 0x30 in hexadecimal
 
+# Array to store byte sequences generated for DACs
 array_of_bytes = []
 
 class DataHandler:
     def __init__(self):
-        # Dizionario per salvare i valori delle soglie precedenti
+        # Dictionary to store the previous threshold values for persistence
         self.previous_threshold_data = {}
 
     def find_address(self, address, lookup_table, key):
+        """Finds the address from the lookup table based on the input key values."""
         for row in lookup_table:
-            # Confronta i primi due elementi della riga con l'input
             if row[0] == address[key[0]] and row[1] == address[key[1]]:
-                return row[2]  # Restituisci il terzo elemento
+                return row[2]  # Return the address from the table
         return None 
 
-# Funzione per trovare l'indirizzo
     def get_address(self, ca1, ca2):
+        """ Retrieves the address for given C1 and C0 values. """
         for row in lookup_table_C1C0:
             if row[0] == ca1 and row[1] == ca2:
-                return row[2]  # Restituisce l'indirizzo
-        return "Indirizzo non trovato: controlla i valori di ca1 e ca2"
+                return row[2]
+        return "Address not found: check the ca1 and ca2 values"
 
     def handle_data(self, i2c_data, threshold_data):
-    
-            ltc_address = self.find_address(i2c_data, lookup_table_C1C0, ["C1", "C0"])
-            ltc_addres_str = bin(int(ltc_address,2))[2:]
-            ad56_address = self.find_address(i2c_data, lookup_table_A1A0, ["A1", "A0"])
-            ad56_addres_str = bin(int(ad56_address,2))[2:]
-            
-            # first byte for i2c address
-            ltc_address = int(ltc_address, 2)
-            ad56_address = int(ad56_address, 2)
-            # list of data received from gui
-            threshold_data = list(threshold_data.values())
+        """
+        Processes the I2C data and threshold values, generating byte sequences for DAC configuration. """
+        # Find LTC and AD56 I2C addresses
+        ltc_address = int(self.find_address(i2c_data, lookup_table_C1C0, ["C1", "C0"]), 2)
+        ad56_address = int(self.find_address(i2c_data, lookup_table_A1A0, ["A1", "A0"]), 2)
+        
+        # Extract threshold data as a list
+        threshold_data = list(threshold_data.values())
 
-            for i in range(0,16):
-            # third e fourth byte (composed by 12 bit of data and 4 bit of padding)
-                msb, lsb = self.map_value_to_16bit(float(threshold_data[i]))
-                msb_ = bin(msb)[2:]
-                lsb_ = bin(lsb)[2:]
-                if i<2 :
-                    # second byte (command + dac address)
-                    dac_address = command + int(dac_addresses[i],2)
-                    #print concatenated binary
-                    dac_address_str = bin(dac_address)[2:]
-                    print("LTC:")
-                    print(ltc_addres_str + dac_address_str + msb_+ lsb_)
-                    #conversion to byte
-                    dac_address = struct.pack('>B', dac_address)
-                    ltc_address_ = struct.pack('>B', ltc_address)
-                    msb = struct.pack('>B',msb)
-                    lsb = struct.pack('>B',lsb)
-                    # concatenate 4 bytes 
-                    bytes_ = ltc_address_ + dac_address +  msb + lsb
-                    print(f"LTC:")
-                    print(bytes_)
-                else:
-                    # second byte (command + dac address)
-                    dac_address = command + int(dac_addresses[i-2],2)
-                    #print concatenated binary
-                    dac_address_str = bin(dac_address)[2:]
-                    print(f"AD56:") 
-                    print(ad56_addres_str + dac_address_str + msb_+ lsb_)
-                    #conversion to byte
-                    dac_address = struct.pack('>B', dac_address)
-                    ad56_address_ = struct.pack('>B', ad56_address)
-                    msb = struct.pack('>B',msb)
-                    lsb = struct.pack('>B',lsb)
-                    # concatenate 4 bytes
-                    bytes_ = ad56_address_ + dac_address + msb + lsb 
-                    print("AD56:") 
-                    print(bytes_)
-                
-                array_of_bytes.append(bytes_)
+        # Iterate over 16 channels to configure DACs
+        for i in range(16):
+            msb, lsb = self.map_value_to_16bit(float(threshold_data[i]))
+            
+            if i < 2:
+                dac_bytes = self.construct_dac_bytes(
+                    ltc_address,
+                    dac_addresses[i],
+                    command,
+                    msb,
+                    lsb,
+                    "LTC ",
+                    i
+                )
+            else:
+                dac_bytes = self.construct_dac_bytes(
+                    ad56_address,
+                    dac_addresses[i - 2],
+                    command,
+                    msb,
+                    lsb,
+                    "AD56 ",
+                    i-2
+                )
+
+            # Append the constructed bytes to the array
+            array_of_bytes.append(dac_bytes)
+
+    def construct_dac_bytes(self, device_address, dac_address_bin, command, msb, lsb, device_label, index_dac):
+        """ Constructs the byte sequence for a DAC configuration. """
+
+        # Compute DAC address by combining command and DAC binary address
+        dac_address = command + int(dac_address_bin, 2)
+        
+        # Pack individual bytes into a single binary structure
+        device_address_bytes = struct.pack('>B', device_address)
+        dac_address_bytes = struct.pack('>B', dac_address)
+        msb_bytes = struct.pack('>B', msb)
+        lsb_bytes = struct.pack('>B', lsb)
+
+        # Combine all bytes into a single sequence
+        full_bytes = device_address_bytes + dac_address_bytes + msb_bytes + lsb_bytes
+
+        # Convert byte sequence to binary string for readability
+        full_bytes_bin = ' '.join(format(byte, '08b') for byte in full_bytes)
+
+        # Print the byte sequence in hexadecimal and binary format
+        print(f"{device_label}{index_dac} hex:", end="\t")
+        print(''.join(f'{data:02x}' for data in full_bytes), end="\t")
+        print(f"bin: {full_bytes_bin}")
+
+        return full_bytes
 
     def map_value_to_16bit(self, x):
-
+        """ Maps a threshold value to a 16-bit representation."""
         mapped_value = int(((x + 1.25) / 2.5) * 4095)
-        # Assicurati che il valore rientri nei limiti (da -2048 a +2047)
+
+        # Ensure the value is within valid range
         if mapped_value > 4095:
             mapped_value = 4095
         elif mapped_value < 0:
@@ -120,6 +136,7 @@ class DataHandler:
         return msb, lsb
     
     def get_i2c_address(self):
+        """Retrieves I2C address configuration from comboboxes."""
         i2c_data = {
             "A1": self.combobox_A1.get(),
             "A0": self.combobox_A0.get(),
@@ -129,40 +146,30 @@ class DataHandler:
         return i2c_data
 
     def get_threshold(self):
-        # Controlla se un valore è stato inserito in "Set All Thresholds"
+        """ Retrieves threshold values entered in the GUI and applies "Set All Thresholds" if applicable."""
         set_all_value = self.set_all_entry.get()
         threshold_data = {}
 
-        if set_all_value:  # Se è presente un valore, applicalo ai campi specificati
+        if set_all_value:
             for label, entry in self.threshold_entries.items():
-                if label in [f"In{i}" for i in range(1, 15)]:  # Campi da In1 a In14
-                    entry.delete(0, tkinter.END)  # Cancella il contenuto della casella di testo
-                    entry.insert(0, set_all_value)  # Inserisci il nuovo valore
+                if label in [f"In{i}" for i in range(1, 15)]:
+                    entry.delete(0, tkinter.END)
+                    entry.insert(0, set_all_value)
                     threshold_data[label] = set_all_value
-                elif label in ["In0_A/Trigger", "In0_B"]:  # Controlla anche In0_A/Trigger e In0_B
+                elif label in ["In0_A/Trigger", "In0_B"]:
                     current_value = entry.get()
-                    if current_value.strip():  # Se è presente un valore, aggiornalo
+                    if current_value.strip():
                         threshold_data[label] = current_value
-                    else:  # Mantieni il valore precedente se non è stato inserito nulla
-                        if label in self.data_handler.previous_threshold_data:
-                            threshold_data[label] = self.data_handler.previous_threshold_data[label]
-                        else:
-                            threshold_data[label] = ""  # Valore predefinito
-        else:  # Altrimenti aggiorna solo i campi con valori inseriti
+                    else:
+                        threshold_data[label] = self.previous_threshold_data.get(label, "")
+        else:
             for label, entry in self.threshold_entries.items():
                 current_value = entry.get()
-                if current_value.strip():  # Se il valore non è vuoto, usalo
+                if current_value.strip():
                     threshold_data[label] = current_value
-                else:  # Mantieni il valore precedente se il campo è vuoto
-                    if label in self.data_handler.previous_threshold_data:
-                        threshold_data[label] = self.data_handler.previous_threshold_data[label]
-                    else:
-                        threshold_data[label] = ""  # Valore predefinito come stringa vuota
+                else:
+                    threshold_data[label] = self.previous_threshold_data.get(label, "")
 
-        # Salva lo stato corrente come nuovo stato precedente
-        self.data_handler.previous_threshold_data = threshold_data
+        self.previous_threshold_data = threshold_data
 
         return threshold_data
-        
-    
-
