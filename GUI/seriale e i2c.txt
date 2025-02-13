@@ -44,3 +44,29 @@ void loop() {
     delay(100);  // Piccola pausa per evitare che Arduino venga sopraffatto da troppi dati
   }
 }
+
+
+questo è quello scritto da Linduino
+// Write a 16-bit word of data to register specified by "command"
+int8_t i2c_write_word_data(uint8_t address, uint8_t command, uint16_t value)
+{
+  int8_t ret=0;
+
+  union
+  {
+    uint8_t b[2];
+    uint16_t w;
+  } data;
+  data.w = value;
+
+  Wire.beginTransmission(address);      // transmit to device
+  Wire.write(byte(command));            // sends instruction byte
+  Wire.write(byte(data.b[1]));          // send value byte
+  Wire.write(byte(data.b[0]));          // send value byte
+  if (Wire.endTransmission())     // stop transmitting
+  {
+    // endTransmission returns zero on success
+    return(1);
+  }
+  return(0);
+}
