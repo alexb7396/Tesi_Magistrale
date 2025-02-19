@@ -2833,6 +2833,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 213.36) (xy 161.29 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c0391ee-56b3-4e3e-a231-e58f2fe62ae7")
+	)
+	(wire
+		(pts
 			(xy 152.4 198.12) (xy 144.78 198.12)
 		)
 		(stroke
@@ -2993,6 +3003,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 209.55) (xy 168.91 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bf540e0-7759-4a4d-a312-674c5be4277d")
+	)
+	(wire
+		(pts
 			(xy 144.78 58.42) (xy 144.78 54.61)
 		)
 		(stroke
@@ -3020,6 +3040,16 @@
 			(type default)
 		)
 		(uuid "6fdb7f56-ca33-453d-8cf1-00c6d9dc3128")
+	)
+	(wire
+		(pts
+			(xy 161.29 210.82) (xy 161.29 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "709a1aa2-01f1-43a6-9424-c557f3814431")
 	)
 	(wire
 		(pts
@@ -3230,16 +3260,6 @@
 			(type default)
 		)
 		(uuid "98584df9-3e85-49ed-910b-9914ca4de1ba")
-	)
-	(wire
-		(pts
-			(xy 168.91 209.55) (xy 168.91 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "988236de-e646-4b17-aa91-29bdcbe08957")
 	)
 	(wire
 		(pts
@@ -6272,17 +6292,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 168.91 213.36 0)
+		(lib_id "power:-8V")
+		(at 161.29 210.82 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9859ef68-c858-41e7-a252-a660527157b6")
-		(property "Reference" "#PWR0131"
-			(at 168.91 219.71 0)
+		(uuid "9427e65c-d8ad-47c6-bfb0-a2e88c9008fd")
+		(property "Reference" "#PWR0111"
+			(at 161.29 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6290,8 +6310,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 166.116 213.36 0)
+		(property "Value" "-4V5"
+			(at 161.544 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6299,7 +6319,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 213.36 0)
+			(at 161.29 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6308,7 +6328,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 213.36 0)
+			(at 161.29 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6316,8 +6336,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 213.36 0)
+		(property "Description" "Power symbol creates a global label with name \"-8V\""
+			(at 161.29 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6326,12 +6346,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "31144592-48ef-4f71-bd46-fd0be2df8878")
+			(uuid "cc077b4b-df77-4a79-a0d5-93ac9992021e")
 		)
 		(instances
 			(project "A5256"
 				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/3c9e057b-9a4b-4b52-bf18-cca9fbecbed2"
-					(reference "#PWR0131")
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)

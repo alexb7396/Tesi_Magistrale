@@ -2647,6 +2647,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 209.55) (xy 162.56 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "155c17cf-0184-4ec5-b31a-420ac3a2174f")
+	)
+	(wire
+		(pts
 			(xy 158.75 54.61) (xy 160.02 54.61)
 		)
 		(stroke
@@ -3044,6 +3054,16 @@
 			(type default)
 		)
 		(uuid "78338adb-718c-47d0-ba52-d8b3812c47d9")
+	)
+	(wire
+		(pts
+			(xy 170.18 212.09) (xy 162.56 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78636ea9-6955-4503-bf93-2b4e05287dc7")
 	)
 	(wire
 		(pts
@@ -3627,16 +3647,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 208.28) (xy 170.18 212.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0a7115a-2810-4673-bcb7-6f1baa5051da")
-	)
-	(wire
-		(pts
 			(xy 153.67 160.02) (xy 153.67 162.56)
 		)
 		(stroke
@@ -3744,6 +3754,16 @@
 			(type default)
 		)
 		(uuid "f178ce35-ab52-4473-b8a5-c922bb72d6c9")
+	)
+	(wire
+		(pts
+			(xy 170.18 208.28) (xy 170.18 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f224aa75-a058-4c5a-8009-7b2bdb520e4f")
 	)
 	(wire
 		(pts
@@ -4946,6 +4966,72 @@
 			(project ""
 				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/8d25cb75-4625-496a-b94d-d5b8c07fb4f3"
 					(reference "JP35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-8V")
+		(at 162.56 209.55 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "41b63a19-6e50-4870-95cb-3eb36b65a176")
+		(property "Reference" "#PWR0171"
+			(at 162.56 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-4V5"
+			(at 162.814 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-8V\""
+			(at 162.56 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "341bdd66-73f1-41ab-987c-79b19a985d86")
+		)
+		(instances
+			(project "A5256"
+				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/8d25cb75-4625-496a-b94d-d5b8c07fb4f3"
+					(reference "#PWR0171")
 					(unit 1)
 				)
 			)
@@ -6324,72 +6410,6 @@
 			(project "Schematico Basso Livello Tesi"
 				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/8d25cb75-4625-496a-b94d-d5b8c07fb4f3"
 					(reference "R133")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 170.18 212.09 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "94a87f79-9557-4196-83e1-6cfb6ca7ef25")
-		(property "Reference" "#PWR0191"
-			(at 170.18 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 167.386 212.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 212.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 212.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 170.18 212.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2d8ee19f-7c0d-441f-a4e2-4fa331c90eb9")
-		)
-		(instances
-			(project "A5256"
-				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/8d25cb75-4625-496a-b94d-d5b8c07fb4f3"
-					(reference "#PWR0191")
 					(unit 1)
 				)
 			)

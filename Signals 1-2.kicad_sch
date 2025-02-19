@@ -3717,6 +3717,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 212.09) (xy 161.29 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eccedc09-8bf4-4ea3-abf1-cbd68eb14b68")
+	)
+	(wire
+		(pts
 			(xy 217.17 210.82) (xy 217.17 218.44)
 		)
 		(stroke
@@ -3754,6 +3764,16 @@
 			(type default)
 		)
 		(uuid "f4103310-fc44-45a2-bea6-723f2fa1247d")
+	)
+	(wire
+		(pts
+			(xy 168.91 214.63) (xy 161.29 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f426e91d-6819-4ab6-a532-4e881837b931")
 	)
 	(wire
 		(pts
@@ -6666,72 +6686,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 168.91 214.63 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a22a1c7c-f1ad-4b84-a7a1-c3ef415e5cca")
-		(property "Reference" "#PWR071"
-			(at 168.91 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 166.116 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "29db46a7-be85-42a8-bff9-771123ad2fe2")
-		)
-		(instances
-			(project "A5256"
-				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/6d2b3d2d-6462-4184-ab5e-e3cf6979e87b"
-					(reference "#PWR071")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+8V")
 		(at 152.4 161.29 0)
 		(mirror y)
@@ -7197,6 +7151,72 @@
 			(project "Schematico Basso Livello Tesi"
 				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/6d2b3d2d-6462-4184-ab5e-e3cf6979e87b"
 					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-8V")
+		(at 161.29 212.09 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d0fabdf1-333f-4491-9b6e-68e27fa19f38")
+		(property "Reference" "#PWR013"
+			(at 161.29 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-4V5"
+			(at 161.544 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-8V\""
+			(at 161.29 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "41241f8b-ac46-47b6-9201-1b16fd17e5b4")
+		)
+		(instances
+			(project "A5256"
+				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/6d2b3d2d-6462-4184-ab5e-e3cf6979e87b"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)

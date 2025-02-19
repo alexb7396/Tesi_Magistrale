@@ -3838,12 +3838,6 @@
 		(uuid "4adf74b3-8b1a-418c-b876-f687a96689d8")
 	)
 	(junction
-		(at 231.14 195.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5dff65fb-229e-4689-9ffa-d4f156b4ee4a")
-	)
-	(junction
 		(at 166.37 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4479,16 +4473,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 195.58) (xy 231.14 195.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3139e9bd-38ae-4ab1-a1b5-af522dc0fa52")
-	)
-	(wire
-		(pts
 			(xy 179.07 170.18) (xy 185.42 170.18)
 		)
 		(stroke
@@ -4496,6 +4480,16 @@
 			(type default)
 		)
 		(uuid "31fbdd79-e8f3-4964-877e-d245ee3e179c")
+	)
+	(wire
+		(pts
+			(xy 234.95 195.58) (xy 237.49 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32c3e697-8276-4089-9a3b-0f1c813f0e10")
 	)
 	(wire
 		(pts
@@ -5586,6 +5580,16 @@
 			(type default)
 		)
 		(uuid "adcf5961-dd3e-460f-8e60-09a1196182aa")
+	)
+	(wire
+		(pts
+			(xy 237.49 194.31) (xy 237.49 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ade4fac6-231b-4427-8479-ee79a813363a")
 	)
 	(wire
 		(pts
@@ -9429,6 +9433,72 @@
 			(project "A5256"
 				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/e43a2eda-b2d3-42a8-b923-dee4aca0821d"
 					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-8V")
+		(at 237.49 194.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6994ea56-7232-435b-8522-965f429e23a8")
+		(property "Reference" "#PWR012"
+			(at 237.49 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-4V5"
+			(at 237.49 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-8V\""
+			(at 237.49 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e70144f0-5514-4a95-acd3-c1bdff744f51")
+		)
+		(instances
+			(project "A5256"
+				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/e43a2eda-b2d3-42a8-b923-dee4aca0821d"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)

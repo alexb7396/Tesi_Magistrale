@@ -3077,6 +3077,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 210.82) (xy 162.56 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82839758-809e-4746-a57b-c0e84caeb700")
+	)
+	(wire
+		(pts
 			(xy 143.51 92.71) (xy 143.51 100.33)
 		)
 		(stroke
@@ -3467,6 +3477,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 213.36) (xy 162.56 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be6ff82b-1da3-4ea2-bf6b-d7c2fbff6dce")
+	)
+	(wire
+		(pts
 			(xy 182.88 73.66) (xy 182.88 74.93)
 		)
 		(stroke
@@ -3474,6 +3494,16 @@
 			(type default)
 		)
 		(uuid "c3b0ef41-6883-42da-9cb6-267de0e1c247")
+	)
+	(wire
+		(pts
+			(xy 170.18 209.55) (xy 170.18 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3de3329-7ddb-4287-a71c-b090c1e0a973")
 	)
 	(wire
 		(pts
@@ -3564,16 +3594,6 @@
 			(type default)
 		)
 		(uuid "cd7ff5c3-a1dd-44eb-b773-b59273f209b1")
-	)
-	(wire
-		(pts
-			(xy 170.18 209.55) (xy 170.18 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd954622-ac41-49c1-a205-a8cc0543b916")
 	)
 	(wire
 		(pts
@@ -4202,72 +4222,6 @@
 			(project "A5256"
 				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/781497ef-644f-454d-9e0b-5135122cdf1b"
 					(reference "C50")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 170.18 213.36 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0d1c70ef-0c11-47ff-8e57-7cbb91dee541")
-		(property "Reference" "#PWR0111"
-			(at 170.18 219.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 167.386 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 170.18 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "691d9de2-875b-47d6-b6e3-6a030ccd839d")
-		)
-		(instances
-			(project "A5256"
-				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/781497ef-644f-454d-9e0b-5135122cdf1b"
-					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -6102,6 +6056,72 @@
 			(project "A5256"
 				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/781497ef-644f-454d-9e0b-5135122cdf1b"
 					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-8V")
+		(at 162.56 210.82 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "70fa3654-f32f-47cb-ae91-357f86c06f2b")
+		(property "Reference" "#PWR091"
+			(at 162.56 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-4V5"
+			(at 162.814 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-8V\""
+			(at 162.56 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df755c09-4da2-4712-a10d-8ea48123a2e3")
+		)
+		(instances
+			(project "A5256"
+				(path "/59e0b50f-8080-4ed9-9b83-2233f3b14569/781497ef-644f-454d-9e0b-5135122cdf1b"
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
