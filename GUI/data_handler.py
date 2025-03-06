@@ -2,6 +2,8 @@ import tkinter
 from tkinter import ttk
 import struct
 import binascii
+import serial
+import time
 
 # Lookup table for C1 and C0 configuration of LTC2627
 lookup_table_C1C0 = [
@@ -94,6 +96,13 @@ class DataHandler:
 
             # Append the constructed bytes to the array
             array_of_bytes.append(dac_bytes)
+            print("tipo di array:", type(array_of_bytes[0]))
+
+        ser = serial.Serial('COM5', 9600)  # Usa la porta seriale corretta per il tuo sistema
+        for data in array_of_bytes:
+            ser.write(data)
+            time.sleep(0.01)
+        ser.close()
 
     def construct_dac_bytes(self, device_address, dac_address_bin, command, msb, lsb, device_label, index_dac):
         """ Constructs the byte sequence for a DAC configuration. """
@@ -122,7 +131,7 @@ class DataHandler:
 
     def map_value_to_16bit(self, x):
         """ Maps a threshold value to a 16-bit representation."""
-        mapped_value = int(((x + 1.25) / 2.5) * 4095)
+        mapped_value = int(((-x + 1.25) / 2.5) * 4095)
 
         # Ensure the value is within valid range
         if mapped_value > 4095:

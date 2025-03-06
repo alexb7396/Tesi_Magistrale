@@ -81,7 +81,7 @@ class ThresholdSelectorApp:
 
     def create_threshold_entries(self, parent):
        
-        labels = ["In0_A/Trigger", "In0_B", "In1", "In2", "In3", "In4", "In5", "In6", "In7", "In8", "In9", "In10", "In11", "In12", "In13", "In14"]
+        labels = ["In0_A", "In0_B/Trigger", "In1", "In2", "In3", "In4", "In5", "In6", "In7", "In8", "In9", "In10", "In11", "In12", "In13", "In14"]
         entries = {}
 
         """Define that we want a maximum of 8 items per column"""
